@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>内江天门冬</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* styles.css */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+  }
+
+  p,
+  li {
+    color: #333;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  footer {
+    /*  background-color: #333; */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  /* 轮播图样式 */
+  .carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+
+  .carousel-control.prev {
+    left: 10px;
+  }
+
+  .carousel-control.next {
+    right: 10px;
+  }
+</style>
+
+<body>
+  <header>
+    <h1>内江天门冬</h1>
+  </header>
+
+  <main>
+    <section class="plant-info">
+      <h2>植物信息</h2>
+      <p><strong>中文名：</strong>内江天门冬</p>
+      <p><strong>拉丁学名：</strong>Asparagus cochinchinensis(Lour.)Merr</p>
+      <p><strong>别名：</strong>内江天冬</p>
+      <p><strong>界：</strong>植物界</p>
+      <p><strong>门：</strong>被子植物门</p>
+      <p><strong>纲：</strong>木兰纲</p>
+      <p><strong>科：</strong>天门冬科</p>
+      <p><strong>目：</strong>天门冬目</p>
+      <p><strong>属：</strong>天门冬属</p>
+
+      <!-- 轮播图部分 -->
+      <h2>图片展示</h2>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="https://imagepphcloud.thepaper.cn/pph/image/118/722/438.jpg" alt="内江天门冬 1"
+              width="20%">
+          </div>
+          <div class="carousel-item">
+            <img src="https://imagepphcloud.thepaper.cn/pph/image/118/722/457.jpg" alt="内江天门冬 2"
+              width="20%">
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://imagepphcloud.thepaper.cn/pph/image/118/722/445.jpg"
+              alt="内江天门冬 3" width="20%">
+          </div>
+        </div>
+        <!-- 轮播图控制按钮 -->
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+      </div>
+      <!--       <h2>视频介绍</h2>
+      <video src="./视频1.mp4" controls width="100%"></video> -->
+    </section>
+
+    <section class="morphology">
+      <h2>形态特征</h2>
+      <p>
+        ‌内江天门冬的根呈纺锤状，肉质，有多数簇生的细长根‌，茎平滑，常弯曲或扭曲，绿色，有时带紫色‌，叶状枝通常每3枚成簇，扁平或稍呈锐三棱形‌，花通常2朵腋生，淡绿色，有时稍带白色‌浆果熟时红色，有1颗种子‌。内江天门冬的根茎表面黄白色或黄棕色，具有深浅不一的纵沟及细皱纹。其茎长可达2米，基部木质化并有短刺，上部披散簇生‌。叶片退化成鳞片状，肉眼不易看到，看到的“叶”实际上是枝变成的‌。花为淡绿色，腋生，花期在5、6月，果期在8、9、10月‌。</p>
+    </section>
+
+    <section class="environment">
+      <h2>生长环境</h2>
+      <p>内江天门冬生长于四川内江等地亚热带湿润季风气候下的海拔 300-500 米的丘陵山坡、山谷、林下‌</p>
+      <ul>
+        <li><strong>温度：</strong>内江天门冬适宜生长在温暖、湿润的环境中‌，18-25℃是较为理想的生长温度。。</li>
+        <li><strong>光照：</strong>内江天门冬喜欢光照充足但不能直接暴晒的环境</li>
+        <li><strong>水分：</strong>喜欢湿润的环境，但不能积水。一般保持土壤湿润，以手抓土壤能成团，松开后土壤能自然散开为宜。</li>
+        <li><strong>土壤：</strong>内江天门冬对土质要求不高，但要求土壤疏松、肥沃、排水良好。</li>
+        <li><strong>通风：</strong>室内养殖时，要注意经常开窗通风，保证空气流通，避免将其放置在封闭闷热的环境中。</li>
+        <li><strong>繁殖：</strong>通常采用分株繁殖、种子繁殖、组培繁殖的方式进行繁殖。</li>
+      </ul>
+    </section>
+
+    <section class="distribution">
+      <h2>分布范围</h2>
+      <p>内江市东兴区位于四川盆地东南部、沱江下游中段，这种地理位置使得该地区气候适宜，土壤肥沃，非常适合天门冬的生长‌
+      </p>
+    </section>
+
+    <section class="value">
+      <h2>主要价值</h2>
+      <p>
+        内江天门冬的主要价值‌体现在其多种药用价值和保健功能上。内江天门冬具有清热润肺、滋阴生津、清心安神、润肠通便和抗疲劳等功效‌。清热润肺‌：内江天门冬性寒，能够清除体内的热邪，对肺热咳嗽、咽喉肿痛等症状有缓解作用‌。滋阴生津‌：内江天门冬含有多种氨基酸和多糖，能够滋养身体，对阴虚引起的口干舌燥、五心烦热等症状有改善效果‌。清心安神‌：内江天门冬具有安神作用，对心神不宁、失眠多梦等症状有一定的缓解作用‌。润肠通便‌：内江天门冬含有大量纤维素，能够促进肠道蠕动，对便秘、大便干结等症状有改善作用‌。抗疲劳‌：内江天门冬含有多种营养成分，能够提高身体的抗病能力和抗疲劳能力，对身体虚弱、疲劳乏力等症状有一定的改善作用‌。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 植物百科--天门冬</p>
+  </footer>
+
+  <script>
+    // JavaScript 实现轮播逻辑
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const carouselInner = document.querySelector('.carousel-inner');
+      const totalItems = document.querySelectorAll('.carousel-item').length;
+      if (index >= totalItems) currentIndex = 0;
+      if (index < 0) currentIndex = totalItems - 1;
+      carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex++;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex--;
+      showSlide(currentIndex);
+    }
+
+    // 自动轮播（可选）
+    setInterval(nextSlide, 3000);
+  </script>
+</body>
+
+</html>
